@@ -1,0 +1,64 @@
+:root {
+    --page-backround: #151C29;
+    --page-text-highlight: #5FA7D2;
+    --page-background-highlight: #212D3E;
+    --first-page-text: #6C6D6F;
+    --second-page-text: white;
+    --header-background: #191A1F;
+    --content-background: #161A21;
+    --install-btn-background: #60821B;
+    --online-text: #4DA652;
+    --profile-extras: #364D70;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-backround)
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 9vh;
+    max-height: 9vh;
+    background-color: var(--header-background);
+    box-shadow: 0 4px 2px -2px black;
+}
+
+.header > img {
+    max-width: 12%;
+    margin-left: 10px;
+}
+
+.header-nav > a {
+    color: var(--second-page-text);
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.35em;
+}
+
+.install-btn {
+    background-color: var(--install-btn-background);
+    color: var(--second-page-text);
+    width: 8%;
+    height: 8%;
+    font-size: 1em;
+    border: none;
+}
+
+.user-info {
+
+}
+
+.user-info > p {
+    color: var(--second-page-text);
+}
