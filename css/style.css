@@ -1,9 +1,9 @@
 :root {
-    --page-backround: #151C29;
+    --page-backround: linear-gradient(180deg, #101924, #16202C);
     --page-text-highlight: #5FA7D2;
     --page-background-highlight: #212D3E;
     --first-page-text: #6C6D6F;
-    --second-page-text: white;
+    --second-page-text: #C5C3C0;
     --header-background: #191A1F;
     --content-background: #161A21;
     --install-btn-background: #60821B;
@@ -18,47 +18,70 @@
 }
 
 body {
-    background-color: var(--page-backround)
+    background-image: var(--page-backround);
+    height: 100vh
 }
 
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 9vh;
-    max-height: 9vh;
+    justify-content: space-between;
+    padding: 0 20px;
+    min-height: 8.5vh;
     background-color: var(--header-background);
-    box-shadow: 0 4px 2px -2px black;
+    box-shadow: 0 2px 8px -2px black;
 }
 
-.header > img {
+.logo {
     max-width: 12%;
-    margin-left: 10px;
+}
+
+.header-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .header-nav > a {
     color: var(--second-page-text);
     text-decoration: none;
-    margin-right: 30px;
-    font-size: 1.35em;
+    font-size: 1.2em;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .install-btn {
     background-color: var(--install-btn-background);
     color: var(--second-page-text);
-    width: 8%;
-    height: 8%;
+    padding: 6px 12px;
     font-size: 1em;
     border: none;
+    cursor: pointer;
+    border-radius: 3%;
 }
 
 .user-info {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .user-info > p {
     color: var(--second-page-text);
+}
+
+.player-profile {
+    background-color: var(--content-background);
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.pfp {
+    border: 3px solid var(--profile-extras);
+    border-radius: 2%;
 }
